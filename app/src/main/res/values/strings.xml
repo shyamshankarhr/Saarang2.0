@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Saarang2017</string>
+    <string name="title_activity_maps">Saarang</string>
+    <string name="alankarDesc">Introducing our one and only light music solo singing competition, Alankar, where you can battle it out with over a hundred vocalists while being judged by the best vocalists out there.</string>
+    <string name="decibelsDesc">Think it is time for your band to be launched into the limelight? Think you have what it takes to compete against some of the best bands in the country? Then sigh up your band for Decibels 2016.</string>
+    <string name="freestyleSoloDesc">Dance like nobody is watching and take the prize away. What other way to throw your inhibitions to the air and set your soul free than freestyle? No second thoughts. Just dance.</string>
+    <string name="panacheDesc">Are you a model trying to make a mark in the fashion industry? Come with your team and be a part of Panache. Be a part of Saarang and take back huge cash prizes, portfolios, and experience.</string>
+    <string name="scrabbleDesc">Do you know what Zyzzva is? Do AA, ZA and XI make perfect sense to you? Got vocabulary that will QUIZZIFY your opponent? Then Scrabble at Saarang is just the place for you.</string>
+
+    <string-array name="events_list">
+        <item>--Choose an event--</item>
+        <item>Alankar</item>
+        <item>Decibels</item>
+        <item>Freestyle Solo</item>
+        <item>Panache</item>
+        <item>Scrabble</item>
+    </string-array>
+
+</resources>
