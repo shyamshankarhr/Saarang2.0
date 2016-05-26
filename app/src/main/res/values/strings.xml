@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Saarang2017</string>
     <string name="title_activity_maps">Saarang</string>
-    <string name="alankarDesc">Introducing our one and only light music solo singing competition, Alankar, where you can battle it out with over a hundred vocalists while being judged by the best vocalists out there.</string>
-    <string name="decibelsDesc">Think it is time for your band to be launched into the limelight? Think you have what it takes to compete against some of the best bands in the country? Then sigh up your band for Decibels 2016.</string>
-    <string name="freestyleSoloDesc">Dance like nobody is watching and take the prize away. What other way to throw your inhibitions to the air and set your soul free than freestyle? No second thoughts. Just dance.</string>
-    <string name="panacheDesc">Are you a model trying to make a mark in the fashion industry? Come with your team and be a part of Panache. Be a part of Saarang and take back huge cash prizes, portfolios, and experience.</string>
-    <string name="scrabbleDesc">Do you know what Zyzzva is? Do AA, ZA and XI make perfect sense to you? Got vocabulary that will QUIZZIFY your opponent? Then Scrabble at Saarang is just the place for you.</string>
 
+
+    <!--Datalist for original ListView-->
+    <string-array name="event_list">
+        <item>Alankar</item>
+        <item>Decibels</item>
+        <item>FreestyleSolo</item>
+        <item>Panache</item>
+        <item>Scrabble</item>
+    </string-array>
+
+    <!--Datalist for Spinner in Registrations class-->
     <string-array name="events_list">
         <item>--Choose an event--</item>
         <item>Alankar</item>
@@ -16,4 +22,76 @@
         <item>Scrabble</item>
     </string-array>
 
+    <!--Datalist for event description-->
+    <string-array name="details_list">
+        <item>Introducing our one and only light music solo singing competition, Alankar, where you can battle it out with over a hundred vocalists while being judged by the best vocalists out there.</item>
+        <item>Think it is time for your band to be launched into the limelight? Think you have what it takes to compete against some of the best bands in the country? Then sigh up your band for Decibels 2016.</item>
+        <item>Dance like nobody is watching and take the prize away. What other way to throw your inhibitions to the air and set your soul free than freestyle? No second thoughts. Just dance.</item>
+        <item>Are you a model trying to make a mark in the fashion industry? Come with your team and be a part of Panache. Be a part of Saarang and take back huge cash prizes, portfolios, and experience.</item>
+        <item>Do you know what Zyzzva is? Do AA, ZA and XI make perfect sense to you? Got vocabulary that will QUIZZIFY your opponent? Then Scrabble at Saarang is just the place for you.</item>
+    </string-array>
+
+
+    <!--Datalist for the list of co-ordinators-->
+    <string-array name="coordinator_names">
+        <item>XYZ</item>
+        <item>ABC</item>
+        <item>PQR</item>
+        <item>MNO</item>
+        <item>IJK</item>
+    </string-array>
+
+    <!--Datalist for the list of phone no of coords-->
+    <string-array name="phoneNumbers">
+        <item>9898989898</item>
+        <item>9876543210</item>
+        <item>9999999999</item>
+        <item>8989898989</item>
+        <item>8888888888</item>
+    </string-array>
+
+    <!--Datalist for the list of email ids of coords-->
+    <string-array name="emailIds">
+        <item>alankarcoord@gmail.com</item>
+        <item>decibelscoord@gmail.com</item>
+        <item>freestylesolocoord@gmail.com</item>
+        <item>panachecoord@gmail.com</item>
+        <item>scrabblecoord@gmail.com</item>
+    </string-array>
+
+    <!--Datalist for the list of locations of events-->
+    <string-array name="locations">
+        <item>SAC</item>
+        <item>OAT</item>
+        <item>OAT</item>
+        <item>SAC</item>
+        <item>CRC</item>
+    </string-array>
+
+    <!--Datalist for the list of prize money-->
+    <string-array name="rewards">
+        <item>700</item>
+        <item>800</item>
+        <item>750</item>
+        <item>999</item>
+        <item>650</item>
+    </string-array>
+
+    <!--Datalist for the list of event dates-->
+    <string-array name="dates">
+        <item>3rd January</item>
+        <item>4th January</item>
+        <item>3rd January</item>
+        <item>4th January</item>
+        <item>3rd January</item>
+    </string-array>
+
+    <!--Datalist for the list of event timings-->
+    <string-array name="timings">
+        <item>9:30am - 3:00pm</item>
+        <item>2:00pm - 5:00pm</item>
+        <item>4:00pm - 6:30pm</item>
+        <item>9:00am - 12:00pm</item>
+        <item>9:30am - 11:00am</item>
+    </string-array>
 </resources>

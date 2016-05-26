@@ -14,6 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    int key;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,21 +40,62 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
+        Intent intent = getIntent();
+        key = intent.getIntExtra("key",0);
+
         LatLng OAT = new LatLng(12.989006, 80.233608);
-        mMap.addMarker(new MarkerOptions().position(OAT).title("OAT").snippet("Decibels, Freestyle Solo"));
         LatLng CRC = new LatLng(12.990449, 80.229765);
-        mMap.addMarker(new MarkerOptions().position(CRC).title("CRC").snippet("Scrabble"));
         LatLng Gurunath = new LatLng(12.986772, 80.235358);
-        mMap.addMarker(new MarkerOptions().position(Gurunath).title("Gurunath").snippet("Grab a snack!"));
         LatLng SAC = new LatLng(12.989274, 80.237695);
-        mMap.addMarker(new MarkerOptions().position(SAC).title("SAC").snippet("Alankar, Panache")).showInfoWindow();
+        MarkerOptions m1=new MarkerOptions().position(OAT).title("OAT").snippet("Decibels, Freestyle Solo");
+        MarkerOptions m2=new MarkerOptions().position(CRC).title("CRC").snippet("Scrabble");
+        MarkerOptions m3=new MarkerOptions().position(Gurunath).title("Gurunath").snippet("Grab a snack!");
+        MarkerOptions m4=new MarkerOptions().position(SAC).title("SAC").snippet("Alankar, Panache");
+
+        float zoomLevel = 15.5f;//This goes up to 21
+
+        //To automatically zoom to the desired location, and show the info, according to the event selected.
+        switch(key){
+            case 1:case 4: {
+                mMap.addMarker(m1);mMap.addMarker(m2);
+                mMap.addMarker(m3);mMap.addMarker(m4).showInfoWindow();
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SAC, zoomLevel));
+                break;
+            }
+            case 2:case 3:
+            {
+                mMap.addMarker(m1).showInfoWindow();mMap.addMarker(m2);
+                mMap.addMarker(m3);mMap.addMarker(m4);
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(OAT, zoomLevel));
+                break;
+
+            }
+            case 5:
+            {
+                mMap.addMarker(m1);mMap.addMarker(m2).showInfoWindow();
+                mMap.addMarker(m3);mMap.addMarker(m4);
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(CRC, zoomLevel));
+                break;
+            }
+            default: {
+                mMap.addMarker(m1);mMap.addMarker(m2);
+                mMap.addMarker(m3);mMap.addMarker(m4);
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(OAT, zoomLevel));
+            }
+        }
+
+
+
+
+
+
+
 
         //The info of SAC is shown by default
 
-        float zoomLevel = 15.5f; //This goes up to 21
+
         //move the camera to the location of OAT initially, with zoom level: 15.5
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(OAT, zoomLevel));
+
     }
 
 }

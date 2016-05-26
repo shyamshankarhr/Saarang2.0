@@ -7,18 +7,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Alankar"
         android:textSize="36dp"
         android:textColor="#dd0000"
         android:layout_marginTop="15dp"
-        android:id="@+id/alankarText"
+        android:id="@+id/titleText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/alankarText">
+        android:layout_below="@id/titleText">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -29,27 +28,24 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="300dp"
-        android:src="@drawable/alankar"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:id="@+id/imageAlankar"/>
+        android:id="@+id/imageEvent"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/imageAlankar"
-        android:layout_alignTop="@id/imageAlankar"
+        android:layout_toEndOf="@id/imageEvent"
+        android:layout_alignTop="@id/imageEvent"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:textColor="#fff"
         android:textSize="16dp"
-        android:text="@string/alankarDesc"
         android:paddingRight="10dp"
-        android:id="@+id/AlankarDesc"/>
+        android:id="@+id/eventDesc"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageAlankar"
-        android:text="3rd January"
+        android:layout_below="@id/imageEvent"
         android:textSize="26dp"
         android:textColor="#dd0000"
         android:layout_marginTop="20dp"
@@ -59,7 +55,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/date"
-        android:text="9:30am - 3:00pm"
         android:textSize="20dp"
         android:textColor="#ffff00"
         android:layout_marginTop="0dp"
@@ -70,7 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="235dp"
         android:layout_alignBottom="@+id/date"
-        android:text="Prize: ₹800"
         android:textSize="20dp"
         android:textColor="#dd0000"
         android:id="@+id/cash"/>
@@ -78,8 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cash"
-        android:layout_alignLeft="@+id/AlankarDesc"
-        android:text="Location: SAC"
+        android:layout_alignLeft="@+id/eventDesc"
         android:textSize="18dp"
         android:textColor="#ffff00"
         android:id="@+id/location"/>
@@ -129,7 +122,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ContactTitle"
-                    android:text="Coordinator: XYZ"
                     android:textSize="26dp"
                     android:textColor="#fff"
                     android:layout_marginLeft="22dp"
@@ -160,7 +152,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Register for Alankar"
+                    android:id="@+id/regButton"
                     android:background="@drawable/custom_button2"
                     android:textColor="#fff"
                     android:textSize="15dp"
